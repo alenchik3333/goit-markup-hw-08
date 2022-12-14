@@ -1,0 +1,15 @@
+.header {
+    letter-spacing: 0.02em;
+    text-transform: none;
+    border-bottom: 1px solid var(--border-header-color);
+  }
+  
+  .header {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+  
+  .header__container {
+    display: flex;
+    align-items: center;
+  }

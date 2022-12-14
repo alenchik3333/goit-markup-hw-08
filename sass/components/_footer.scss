@@ -1,0 +1,128 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--hero-fon-color);
+    text-transform: none;
+  }
+  
+  .logo-footer {
+    color: var(--accent-text-color);
+  }
+  .logo,
+  .logo-footer {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  
+  .footer-container {
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-style: normal;
+    line-height: 1.71;
+  }
+  
+  .address-map {
+    color: var(--accent-text-color);
+    transition: color var(--transition-fast);  
+
+    &:hover,
+    &:focus {
+     color: var(--additional-text-color);
+   }
+  }
+  
+  .link-contact {
+    color: var(--footer-text-color);
+    transition: color var(--transition-fast);
+
+    &:hover,
+    &:focus {
+      color: var(--additional-text-color);
+    }
+  }
+  
+  .footer-socials {
+    color: var(--accent-text-color);
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .join-list {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .join-link  {
+    background-color: var(--footer-socials-color);
+
+    &:hover,
+    &:focus {
+      background-color: var(--additional-text-color);
+    }
+  }
+  
+  .join-icon {
+    fill: var(--accent-text-color);
+  }
+  
+  .footer-form-text {
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--accent-text-color);
+  }
+  
+  .footer-form {
+    display: flex;
+  }
+  
+  .footer-form-field {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--hero-fon-color);
+    outline: none;
+    color: var(--accent-text-color);
+    margin-right: 10px;
+    transition: border var(--transition-fast), cursor var(--transition-fast);
+    cursor: pointer;
+
+    &::placeholder {
+      font-size: 16px;
+    }
+    
+    &:focus {
+      border: 1px solid var(--additional-text-color);
+    }
+  }
+  
+  .footer-form-icon {
+    fill: var(--accent-text-color);
+    margin-left: 10px;
+    transition: fill var(--transition-fast);
+  }
+  
+  .footer-form-btn {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+  }

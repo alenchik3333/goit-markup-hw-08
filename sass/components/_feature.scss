@@ -1,0 +1,33 @@
+.feature-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .feature__list  {
+    display: flex;
+    line-height: 1.71;
+    gap: 30px;
+
+    & .feature__title {
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+    }
+  }
+  
+  .feature__item{
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  
+  .feature__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--additional-fon-color);
+    margin-bottom:  30px;
+  }
+  
+  

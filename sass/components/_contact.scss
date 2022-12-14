@@ -1,0 +1,23 @@
+.contact-list {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+  }
+  
+   .contact__link {
+    display: flex;
+    gap: 10px;
+    color: var(--primary-text-color);
+    justify-content: center;
+    align-items: center;
+    transition: color var(--transition-fast);
+  }
+  
+  .contact__link--change:hover,
+  .contact__link--change:focus {
+    color: var(--additional-text-color);
+  }
+  
+  .contact__icon--change {
+    fill: currentColor;
+  }
