@@ -1,12 +1,15 @@
 .header {
+    padding-top: 15px;
+    padding-bottom: 15px;
     letter-spacing: 0.02em;
     text-transform: none;
     border-bottom: 1px solid var(--border-header-color);
-  }
-  
-  .header {
     font-weight: 500;
     letter-spacing: 0.02em;
+
+    @media screen and (min-width: 768px) {
+      padding: 0;
+    }
   }
   
   .header__container {

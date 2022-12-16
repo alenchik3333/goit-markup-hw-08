@@ -1,14 +1,14 @@
-.section-client {
+.client {
     padding-top: 94px;
     padding-bottom: 94px;
   }
   
-  .client-list {
+  .client__list {
     display: flex;
     gap: 30px;
   }
   
-  .client-link {
+  .client__link {
     display: flex;
     width: 170px;
     height: 92px;
@@ -23,13 +23,13 @@
     border-color: var(--additional-text-color);
   } 
 
-  &:hover .client-icon,
-  &:focus  .client-icon {
+  &:hover .client__icon,
+  &:focus .client__icon {
     fill: var(--additional-text-color);
   }
 }
   
-  .client-icon {
+  .client__icon {
     fill:var(--socials-icons-color);
     transition: fill var(--transition-fast) 
   }

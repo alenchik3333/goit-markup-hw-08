@@ -1,7 +1,17 @@
 .contact-list {
-    display: flex;
-    gap: 50px;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      gap: 50px;
     margin-left: auto;
+    }
   }
   
    .contact__link {
