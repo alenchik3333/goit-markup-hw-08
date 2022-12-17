@@ -25,6 +25,7 @@
   .nav__list .nav__link--current {
     color: var(--additional-text-color);
   }
+  
   .nav__list .link {
     display: block;
   }
@@ -66,3 +67,27 @@
     opacity: 1;
     transition: opacity var(--transition-fast);
   }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+  
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+    fill: var(--additional-text-color);
+  }
+  }
+  
+  
