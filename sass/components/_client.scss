@@ -5,18 +5,32 @@
   
   .client__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
   }
   
   .client__link {
     display: flex;
-    width: 170px;
+    flex-basis: calc((100% - 2*30px))/ 2;
+    width: 210px;
     height: 92px;
     border: 1px solid var(--socials-icons-color);
     border-radius: 4px;
     align-items: center;
     justify-content: center;
     transition: border-color var(--transition-fast);
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
 
   &:hover,
   &:focus {
