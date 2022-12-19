@@ -328,6 +328,7 @@ a {
   background-color: var(--hero-fon-color);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   max-width: 480px;
   margin: 0 auto;
   text-align: center;
