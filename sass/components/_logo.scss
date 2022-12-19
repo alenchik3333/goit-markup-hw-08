@@ -10,7 +10,11 @@
   }
   
   .header__logo {
-    margin-right: 93px;
+    margin-right: 88px;
+
+    // @media screen and (min-width: 1200px) {
+    //   margin-right: 93px;
+    // }
   }
   
   .header__logo--component {

@@ -25,7 +25,7 @@
 .menu-close-icon:hover,
 .menu-close-icon:focus {
     fill: var(--additional-text-color);
-    cursor: po;
+    cursor: pointer;
 }
   
 .menu-container {
@@ -36,7 +36,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 32px;
+    padding: 48px 40px;
     background: var(--accent-text-color);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     z-index: 999;
@@ -82,6 +82,11 @@
     flex-direction: column;
     gap: 32px;
     margin-bottom: 64px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-direction: row;
+    gap: 0;
+    }
 }
 
 .mobile-contacts-item .phone {
@@ -100,21 +105,24 @@
 
 .mobile-socials {
     display: flex;
-    gap: 20px;
+    align-items: center;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
-    color: var(--additional-text-color);
+    color: var(--additional-text-color); 
+}
+.mobile-socials-link {
+    margin-right: 10px;
 }
 
-.mobile-socials-link::before {
-    content: '';
-    display: flex;
-    align-items: center;
-    width: 22px;
-    border: 1px solid var(--border-modal-input);
-    transform: rotate(90deg) translateX(25px) translateY(30px);
-    transform-origin: right;   
-}
 
+
+.mobile-socials-item:not(:first-child)::before {
+    content: " ";
+    display: inline-flex;
+    width: 1px;
+    height: 22px;
+    background-color: rgba(33, 33, 33, 0.2);
+    margin-right: 10px;
+}

@@ -13,6 +13,8 @@
     flex-direction: column;
     line-height: 1.71;
     gap: 30px;
+    flex-wrap: wrap;
+
 
     & .feature__title {
       text-align: center;
@@ -22,17 +24,21 @@
 
       @media screen and (min-width: 768px) {
         text-align: left;
-      }
-
-      @media screen and (min-width: 1200px) {
         flex-direction: row;
       }
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
     }
   }
   
   .feature__item{
-    flex-basis: calc((100% - 90px) / 4);
-    
+    flex-basis: calc((100% - 30px) / 2);
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
   }
   
   .feature__icon {
@@ -44,6 +50,10 @@
     border-radius: 4px;
     background-color: var(--additional-fon-color);
     margin-bottom:  30px;
+
+    @media screen and (min-width: 768px)and(max-width: 1199px) {
+      width: 354px;
+      }
 
     @media screen and (min-width: 1200px) {
       width: 270px;
