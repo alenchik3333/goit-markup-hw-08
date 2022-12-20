@@ -402,14 +402,8 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.feature__list .feature__title {
-  text-align: center;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-}
 @media screen and (min-width: 768px) {
-  .feature__list .feature__title {
+  .feature__list {
     text-align: left;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -417,13 +411,11 @@ a {
             flex-direction: row;
   }
 }
-@media screen and (min-width: 768px) {
-  .feature__list {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
+.feature__list .feature__title {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 .feature__item {
@@ -436,6 +428,8 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
   }
 }
 
@@ -525,20 +519,27 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
-  -ms-flex-preferred-size: calc((100% - 90px) / 4);
-      flex-basis: calc((100% - 90px) / 4);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .team__list {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
   }
 }
 
