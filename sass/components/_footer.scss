@@ -112,9 +112,6 @@
   fill: var(--accent-text-color);
 }
 
-
-
-
 .footer-form-text {
   text-align: center;
   font-weight: 700;
@@ -141,7 +138,7 @@
 }
 
 .footer-form-field {
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -153,6 +150,10 @@
   margin-right: 10px;
   transition: border var(--transition-fast), cursor var(--transition-fast);
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 
   &::placeholder {
     font-size: 16px;
